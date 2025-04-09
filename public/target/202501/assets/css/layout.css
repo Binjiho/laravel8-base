@@ -1,0 +1,486 @@
+@charset "utf-8";
+/* ==================================================
+
+    * layout
+    
+================================================== */
+
+/* 공통:: */
+.wrap {
+    overflow-x: hidden;
+}
+#container{
+    margin-top: 210px;
+    font-size: 1.7rem;
+}
+#conatiner:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+#dim{
+    z-index: 15;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* 공통::헤더 */
+#header{
+    z-index: 15;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 210px;
+}
+.header-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 140px;
+}
+.header-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-logo > a{
+    display: block;
+    width: 352px;
+    height: 77px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../image/common/h1_logo.png');
+    text-indent: -9999px;
+}
+.util-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    line-height: 1;
+}
+.util-menu li{
+    position: relative;
+}
+.util-menu li + li:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    display: block;
+    width: 1px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: rgba(0,0,0,0.2);
+}
+.util-menu li > a{
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.util-menu li.home > a{
+    padding-left: 15px;
+    background-image: url('../image/common/ic_util_home.png');
+}
+.util-menu li.login > a{
+    padding-left: 15px;
+    background-image: url('../image/common/ic_login.png');
+}
+.util-menu li.admin > a{
+    color: darkkhaki;
+}
+
+/* gnb */
+#gnb{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.35);
+}
+#header #gnb::before {
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.gnb{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.gnb > li{
+    width: 100%;
+}
+.gnb > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.gnb > li > ul{
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 20px 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.gnb > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#header.active #gnb{
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+#header.active #gnb::before {
+    opacity: 1;
+}
+.gnb > li > ul:hover {
+    background-color: #fff;
+}
+
+.m-gnb-header{
+    display: none;
+}
+.btn-home,
+.btn-menu-open,
+.btn-menu-close{
+    display: none;
+}
+
+/* 공통::푸터 */
+#footer{
+    position: relative;
+    z-index: 1;
+    background-color: #3e5d66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+}
+.footer-wrap{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-wrap .footer-logo {
+    flex-shrink: 0;
+}
+.footer-wrap .address-list li {
+    line-height: 1.6;
+}
+.footer-wrap .address-list li p {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-wrap .address-list li span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#footer .copy{
+    padding: 15px;
+    text-align: center;
+    background-color: #37525a;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.btn-top{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.btn-top span {
+    display: block;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1240px){ 
+    .header-logo {
+        left: 20px;
+        transform: translate(0,-50%);
+    }
+
+    .btn-top{ 
+        right: 20px;
+    }
+}
+@media screen and (max-width: 1024px){ 
+    html,
+    body{
+        font-size: 9px;
+    }    
+    /* 공통:: */
+    #container {
+        margin-top: 70px;
+        font-size: 14px;
+    }
+
+    /* header */
+    .header-wrap .dday-wrap,
+    .header-wrap .util-menu{
+        display: none;
+    }
+    #header {
+        z-index: unset;
+        background-color: #fff;
+        height: auto;
+    }
+    .header-wrap.inner-layer {
+        justify-content: center;
+        height: 70px;
+        padding: 0 65px;
+    }
+    .header-logo{
+        position: static;
+        display: block;
+        transform: translate(0,0);
+    }
+    .header-logo > a{
+        width: 176px;
+        height: 39px;
+        background-image: url('../image/common/h1_logo.png') !important;
+    }
+    .btn-menu-open {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../image/common/ic_menu_open.png');
+        background-size: contain;
+        text-indent: -9999px;
+    }
+    .btn-home {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../image/common/ic_home.png');
+        background-size: contain;
+        text-indent: -9999px;
+    }
+
+    /* gnb */
+    .m-gnb-header{
+        display: block;
+    }
+    .m-gnb-header .dday-wrap{
+        position: static;
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        background: linear-gradient(to right, #7addd2, #0074aa);
+    }
+    .m-gnb-header .dday-wrap p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .m-gnb-header .dday-wrap .dday{
+        font-size: 20px;
+        font-weight: 800;
+        color: #ffe400;
+    }
+    .m-gnb-header .util-wrap{
+        margin-bottom: 10px;
+    }
+    .m-gnb-header .util-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .m-gnb-header .util-menu li{
+        display: block;
+        flex: 1;
+        text-align: center;
+    }
+    .m-gnb-header .util-menu li + li:before{
+        background-color: #c6cfdb;
+        left: -5px;
+    }
+    .m-gnb-header .util-menu li > a{
+        display: block;
+        padding: 10px;
+        background: none;
+        font-size: 14px;
+        color: #484848;
+    }
+    .m-gnb-header .util-menu li.full a {
+        background-color: #00a0e0;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    #gnb{   
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        right: -100%;    
+        width: 80%;
+        height: 100%;
+        padding: 20px;
+        background-color: #fff;
+    }
+    .gnb-wrap.inner-layer{
+        overflow-y: auto;
+        max-height: calc(100vh - 180px);
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gnb {
+        flex-direction: column;
+        padding-top: 10px;
+        border-top: 1px solid #c6cfdb;
+    }
+    .gnb > li{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .gnb > li > a{
+        justify-content: flex-start;
+        height: auto;
+        padding: 10px 0;
+        padding-right: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-image: url('../image/common/ic_arrow_down.png');
+        background-size: 10px auto;
+    }
+    .gnb > li.on > a{
+        background-image: url('../image/common/ic_arrow_up.png');
+        color: #008aac;
+    }
+    .gnb > li > ul{
+        display: none;
+        height: auto;
+        padding: 0 0 20px;
+        transition: unset;
+        -webkit-transition: unset;
+    }
+    .gnb > li > ul > li > a{
+        padding: 8px 0;
+        padding-left: 1.5rem;;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .gnb > li > ul > li > a:before{
+        content: '\00B7';
+        display: inline-block;
+        width: 1.5rem;
+        margin-left: -1.5rem;
+        font-weight: 400;
+    }
+    .btn-menu-close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: -50px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../image/common/ic_menu_close.png');
+        background-size: contain;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    html,
+    body{
+        font-size: 8px;
+    }
+    
+
+    /* 공통::헤더 */  
+    .btn-menu-open {
+        right: 15px;
+    }
+    .btn-home {
+        left: 15px;
+    }
+
+    /* 공통::푸터 */  
+    .footer-wrap{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 40px !important;
+        font-size: 13px;
+    }
+    .footer-wrap .footer-logo {
+        display: none;
+    }
+    .footer-wrap .address-list {
+        margin-top: 0;
+    }
+    .footer-wrap .address-list li p {
+        margin-right: 10px;
+    }
+    .footer-wrap .address-list li span {
+        margin-right: 5px;
+    }
+    #footer .copy {
+        padding: 10px 15px;
+    }
+
+    .btn-top{
+        right: 15px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        background-color: #37525a;
+    }
+}

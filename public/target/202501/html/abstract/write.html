@@ -1,0 +1,399 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/target/202501/include/header.inc';
+?>
+
+<section id="container">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <p>YEP 초록접수</p>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">초록접수</a>
+                    <ul>
+                        <li><a href="#n">행사안내</a></li>
+                        <li><a href="#n">프로그램</a></li>
+                        <li><a href="#n">사전등록</a></li>
+                        <li><a href="#n">초록접수</a></li>
+                        <li><a href="#n">특별세선</a></li>
+                        <li><a href="#n">후원</a></li>
+                        <li><a href="#n">전시</a></li>
+                        <li><a href="#n">참가안내</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">YEP 초록접수</a>
+                    <ul>
+                        <li><a href="#n">YEP 초록접수 안내</a></li>
+                        <li class="on"><a href="#n">YEP 초록접수</a></li>
+                        <li><a href="#n">초록접수 조회 및 수정</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="breadcrumb">
+                <li><img src="/target/202501/assets/image/sub/img_breadcrumb.png" alt=""></li>
+                <li>HOME</li>
+                <li class="font-suit">&gt;</li>
+                <li>YEP 초록접수</li>
+                <li class="font-suit">&gt;</li>
+                <li>YEP 초록접수</li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="sub-conbox inner-layer">
+
+            <div class="pc-only-wrap m-show">
+                <img src="/target/202501/assets/image/sub/img_pc_only.png" alt="">
+                <p>YEP 초록접수는 <span>PC</span>에서만 가능합니다.</p>
+            </div>
+
+            <div class="m-hide">
+                <div class="sub-tab-wrap">
+                    <ul class="sub-tab-menu">
+                        <li><a href="#n"><span>YEP 초록접수 안내</span></a></li>
+                        <li class="on"><a href="#n"><span>YEP 초록접수</span></a></li>
+                        <li><a href="#n"><span>YEP 초록접수 조회 및 수정</span></a></li>
+                    </ul>
+                </div>
+
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">초록접수 작성</legend>
+                        <div class="write-tit-wrap bg-green">
+                            <img src="/target/202501/assets/image/sub/ic_abstract_write.png" alt="">
+                            <div class="text-wrap">
+                                <p class="tit">{제10회 전문가그룹 학술대회} 초록 등록</p>
+                                <p class="des">초록접수 마감일 : ~ <span class="text-pink">2025</span>년 <span class="text-pink">6</span>월 <span class="text-pink">2</span>일 월요일</p>
+                            </div>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">접수자 정보</h4>
+                        </div>
+                        <div class="table-wrap">
+                            <table class="cst-table">
+                                <caption class="hide">접수자 정보</caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>참가구분</th>
+                                        <td colspan="3" class="text-left">전문가그룹세션 발표자</td>
+                                    </tr>
+                                    <tr>
+                                        <th>대한환경공학회 홈페이지 회원여부</th>
+                                        <td class="text-left">회원</td>
+                                        <th>국적</th>
+                                        <td class="text-left"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>성명</th>
+                                        <td class="text-left"></td>
+                                        <th>직장명 (소속)</th>
+                                        <td class="text-left"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>직위</th>
+                                        <td class="text-left"></td>
+                                        <th>이메일</th>
+                                        <td class="text-left"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰번호</th>
+                                        <td class="text-left"></td>
+                                        <th></th>
+                                        <td class="text-left"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">초록 정보</h4>
+                        </div>
+                        <p class="help-text mb-10">※ 필수 입력 항목은 빨간색 (<span class="required">*</span>)이 표시되어 있습니다.</p>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-tit"><strong class="required">*</strong> 대주제</div>
+                                    <div class="form-con">
+                                        <select name="" id="" class="form-item">
+                                            <option value="">대주제 선택</option>
+                                            <option value="">대기환경</option>
+                                            <option value="">생태 및 위해성</option>
+                                            <option value="">물환경 / 상하수도</option>
+                                            <option value="">자원순환 및 에너지</option>
+                                            <option value="">토양 지하수</option>
+                                            <option value="">환경정책 및 교육</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit"><strong class="required">*</strong> 논문 제목 (국문)</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit"><strong class="required">*</strong> 논문 제목 (영문)</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="write-wrap-top text-right">
+                                <div class="cnt-num">
+                                    글자수 : <input type="text" name="" class="form-item"> / 350 단어 (공백제외)
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-tit"><strong class="required">*</strong> 초록 (Abstract)</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit"><strong class="required">*</strong> 주제어 (Keywords)</div>
+                                    <div class="form-con">
+                                        <div class="form-group n5">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">사사 (Acknowledgment)</div>
+                                    <div class="form-con">
+                                        <div class="form-group n2">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">저자 정보</h4>
+                        </div>
+                        <div class="write-wrap n-bd">
+                            <div class="write-wrap-top">
+                                <div class="btn-wrap mt-0">
+                                    <a href="#n" class="btn btn-small color-wh btn-line">+&nbsp;&nbsp;&nbsp;기관 및 소속 추가</a>
+                                </div>
+                                <p class="tit">기관 및 소속 정보</p>
+                            </div>
+                            <div class="table-wrap n-bd-t mt-0">
+                                <table class="cst-table">
+                                    <caption class="hide">저자 정보</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col>
+                                        <col style="width:150px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>소속 및 기관 명</th>
+                                            <th>관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center">1</th>
+                                            <td>
+                                                <div class="form-group-text">
+                                                    <p class="text">국문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                                <div class="form-group-text mt-10">
+                                                    <p class="text">영문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-wrap mt-0 text-center">
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▲</a>
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▼</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center">2</th>
+                                            <td>
+                                                <div class="form-group-text">
+                                                    <p class="text">국문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                                <div class="form-group-text mt-10">
+                                                    <p class="text">영문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-wrap mt-0 text-center">
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▲</a>
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▼</a>
+                                                    <a href="#n" class="btn btn-small color-delete">삭제</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="write-wrap-top mt-20">
+                                <div class="btn-wrap mt-0">
+                                    <a href="#n" class="btn btn-small color-wh btn-line">+&nbsp;&nbsp;&nbsp;저자 추가</a>
+                                </div>
+                                <p class="tit">저자</p>
+                            </div>
+                            <div class="table-wrap n-bd-t mt-0">
+                                <table class="cst-table">
+                                    <caption class="hide">저자 추가</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col>
+                                        <col style="width:20%;">
+                                        <col style="width:90px;">
+                                        <col style="width:150px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>이름</th>
+                                            <th>기관 및 소속</th>
+                                            <th>교신저자</th>
+                                            <th>관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center">1</th>
+                                            <td>
+                                                <div class="form-group-text">
+                                                    <p class="text">국문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                                <div class="form-group-text mt-10">
+                                                    <p class="text">영문 :</p>
+                                                    <input type="text" name="" id="" class="form-item" placeholder="First Name">
+                                                    <input type="text" name="" id="" class="form-item" placeholder="Last Name">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox-wrap cst">
+                                                    <label class="checkbox-group"><input type="checkbox" name="">1</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">2</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">3</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">4</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">5</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">6</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">7</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">8</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">9</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">10</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox-wrap cst">
+                                                    <label class="checkbox-group no-text"><input type="checkbox" name="" class=""></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-wrap mt-0 text-center">
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▲</a>
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▼</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center">2</th>
+                                            <td>
+                                                <div class="form-group-text">
+                                                    <p class="text">국문 :</p>
+                                                    <input type="text" name="" id="" class="form-item">
+                                                </div>
+                                                <div class="form-group-text mt-10">
+                                                    <p class="text">영문 :</p>
+                                                    <input type="text" name="" id="" class="form-item" placeholder="First Name">
+                                                    <input type="text" name="" id="" class="form-item" placeholder="Last Name">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox-wrap cst">
+                                                    <label class="checkbox-group"><input type="checkbox" name="">1</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">2</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">3</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">4</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">5</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">6</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">7</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">8</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">9</label>
+                                                    <label class="checkbox-group"><input type="checkbox" name="">10</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox-wrap cst">
+                                                    <label class="checkbox-group no-text"><input type="checkbox" name=""></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-wrap mt-0 text-center">
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▲</a>
+                                                    <a href="#n" class="btn btn-small color-type1 btn-line font-suit">▼</a>
+                                                    <a href="#n" class="btn btn-small color-delete">삭제</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">자동화 프로그램 입력 방지</h4>
+                        </div>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-con">
+                                        <div class="captcha">
+                                            <span class="img"><img id="captcha_img" src="/target/202501/assets/image/sub/captcha.png"></span>
+                                            <img src="/target/202501/assets/image/sub/ic_refresh.png" class="refresh" onclick="refresh_captcha();return false;">
+                                            <input type="text" name="captcha" id="captcha" class="form-item">
+                                        </div>
+                                        <p class="help-text mt-10 text-red">* 정보 보안을 위해 아래 적힌 문자를 입력하신 후 등록 가능합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-wrap text-center">
+                            <a href="preview.html" class="btn btn-type1 color-type4 btn-line">미리보기</a>
+                            <a href="#n" class="btn btn-type1 color-type4">취소</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </div>
+    </article>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/target/202501/include/footer.inc';
+?>

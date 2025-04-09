@@ -1,0 +1,139 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
+?>
+
+<section id="container">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <h2 class="sub-visual-text">2 Depth명</h2>
+            <ul class="breadcrumb">
+                <li><img src="/assets/image/sub/img_breadcrumb.png" alt=""></li>
+                <li>1Depth</li>
+                <li>&gt;</li>
+                <li>2Depth</li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">학회소개</a>
+                    <ul>
+                        <li><a href="#n">학회소개</a></li>
+                        <li><a href="#n">학술대회</a></li>
+                        <li><a href="#n">학술지 및 간행물 </a></li>
+                        <li><a href="#n">회원관련</a></li>
+                        <li><a href="#n">저널검색</a></li>
+                        <li><a href="#n">학회소식</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">회원가입 안내</a>
+                    <ul>
+                        <li class="on"><a href="#n">회원가입 안내</a></li>
+                        <li><a href="#n">로그인</a></li>
+                        <li><a href="#n">아이디/비밀번호 찾기</a></li>
+                        <li><a href="#n">회비납부 현황조회</a></li>
+                        <li><a href="#n">학술대회 참석조회</a></li>
+                        <li><a href="#n">회원탈퇴</a></li>
+                        <li><a href="#n">구인·구직</a></li>
+                        <li><a href="#n">개인정보 취급 방침</a></li>
+                        <li><a href="#n">이메일 무단 수집 거부</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="sub-conbox inner-layer">
+            
+            <!-- s:board -->
+            <div id="board" class="board-wrap">
+                <div class="board-write">
+                    <div class="write-form-wrap">
+                        <form action="./list.html" method="">
+                            <fieldset>
+                                <legend class="hide">글쓰기</legend>
+                                <div class="write-contop text-right">
+                                    <div class="help-text"><strong class="required">*</strong> 표시는 필수입력 항목입니다.</div>
+                                </div>
+                                <ul class="write-wrap">
+                                    <li>
+                                        <div class="form-tit">작성자</div>
+                                        <div class="form-con">대한환경공학회</div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit"><strong class="required">*</strong> 제목</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <div class="checkbox-wrap cst mt-10">
+                                                <label class="checkbox-group"><input type="checkbox" name="" id="chk-tit1">Main 노출</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit"><strong class="required">*</strong> 이메일</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">LINK URL</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit"><strong class="required">*</strong> 공개 여부</div>
+                                        <div class="form-con">
+                                            <div class="radio-wrap cst">
+                                                <label class="radio-group"><input type="radio" name="" id="chk1">공개</label>
+                                                <label class="radio-group"><input type="radio" name="" id="chk2">비공개</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">썸네일</div>
+                                        <div class="form-con">
+                                            <div class="filebox">
+                                                <input class="upload-name form-item" value="" placeholder="파일첨부" readonly="readonly">
+                                                <label for="file">파일찾기</label> 
+                                                <input type="file" id="file" class="file-upload">  
+                                                <div class="attach-file">
+                                                    <a href="#n" target="_blank" class="link">첨부파일.jpg</a>
+                                                    <a href="#n" class="btn-file-delete text-red">X</a>
+                                                </div>        
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-con">
+                                            에디터 영역
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-con">
+                                            파일 등록 영역
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap text-center">
+                                    <a href="./list.html" class="btn btn-type1 color-type7">취소</a>
+                                    <button type="submit" class="btn btn-type1 color-type10">수정</button>
+                                    <button type="submit" class="btn btn-type1 color-type10">등록</button>
+                                </div>                      
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- //e:board -->
+            
+        </div>
+    </article>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
+?>

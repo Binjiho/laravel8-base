@@ -1,0 +1,156 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/target/202501/include/header.inc';
+?>
+
+<section id="container">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <p>공지사항</p>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">행사안내</a>
+                    <ul>
+                        <li><a href="#n">행사안내</a></li>
+                        <li><a href="#n">프로그램</a></li>
+                        <li><a href="#n">사전등록</a></li>
+                        <li><a href="#n">초록접수</a></li>
+                        <li><a href="#n">특별세선</a></li>
+                        <li><a href="#n">후원</a></li>
+                        <li><a href="#n">전시</a></li>
+                        <li><a href="#n">참가안내</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">공지사항</a>
+                    <ul>
+                        <li><a href="#n">초대의 글</a></li>
+                        <li><a href="#n">행사안내</a></li>
+                        <li><a href="#n">전문가 그룹</a></li>
+                        <li class="on"><a href="#n">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="breadcrumb">
+                <li><img src="/target/202501/assets/image/sub/img_breadcrumb.png" alt=""></li>
+                <li>HOME</li>
+                <li class="font-suit">&gt;</li>
+                <li>행사안내</li>
+                <li class="font-suit">&gt;</li>
+                <li>공지사항</li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="sub-conbox inner-layer">
+
+            <!-- s:board -->
+            <link href="/target/202501/html/bbs/notice/assets/css/board.css" rel="stylesheet">
+            
+            <div id="board" class="board-wrap">
+                <div class="sch-wrap type2 font-pre">
+                    <form action="" method="">
+                        <feildset>
+                            <legend class="hide">검색</legend>
+                            <div class="form-group">
+                                <select name="" id="" class="form-item sch-cate">
+                                    <option value="">제목+내용</option>
+                                    <option value="">작성자</option>
+                                    <option value="">제목</option>
+                                    <option value="">내용</option>
+                                </select>
+                                <input type="text" name="" id="" class="form-item sch-key" placeholder="검색어를 입력하세요.">
+                                <button type="submit" class="btn btn-sch"><span class="hide">검색</span></button>
+                                <button type="reset" class="btn btn-reset">검색 초기화</button>
+                            </div>
+                        </feildset>
+                    </form>
+                </div>
+                <ul class="board-list">
+                    <!-- 공지 -->
+                    <li class="ef01 active">                        
+                        <div class="list-con">
+                            <div class="bbs-tit">
+                                <div class="bbs-cate">공지</div><br>
+                                <a href="./view.html" class="ellipsis2">
+                                    공지사항 입니다.                  
+                                </a>       
+                                <span class="ic-new">N</span>
+                            </div>
+                            <span class="bbs-date">YYYY-MM-DD</span>
+                            <span class="bbs-name">작성자</span>
+                            <span class="bbs-hit">100 Hit</span>
+                            <span><img src="/html/bbs/notice/assets/image/ic_attach_file.png" alt=""></span>
+                        </div>
+                        <div>
+                            <div class="bbs-admin">
+                                <select name="" id="" class="form-item">
+                                    <option value="">공개</option>
+                                    <option value="">비공개</option>
+                                </select>
+                                <a href="#n" class="btn btn-modify"><span class="hide">수정</span></a>
+                                <a href="#n" class="btn btn-delete"><span class="hide">삭제</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ef01">                        
+                        <div class="list-con">
+                            <div class="bbs-tit">
+                                <a href="./view.html" class="ellipsis2">
+                                    게시글 제목은 2줄까지 표시됩니다. 게시글 제목은 2줄까지 표시됩니다. 게시글 제목은 2줄까지 표시됩니다. 게시글 제목은 2줄까지 표시됩니다. 게시글 제목은 2줄까지 표시됩니다.
+                                </a>               
+                                <span class="ic-new">N</span>
+                            </div>
+                            <span class="bbs-date">YYYY-MM-DD</span>
+                            <span class="bbs-name">작성자</span>
+                            <span class="bbs-hit">100 Hit</span>
+                            <span><img src="/html/bbs/notice/assets/image/ic_attach_file.png" alt=""></span>
+                        </div>
+                        <div>
+                            <div class="bbs-admin">
+                                <select name="" id="" class="form-item">
+                                    <option value="">공개</option>
+                                    <option value="">비공개</option>
+                                </select>
+                                <a href="#n" class="btn btn-modify"><span class="hide">수정</span></a>
+                                <a href="#n" class="btn btn-delete"><span class="hide">삭제</span></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- no data -->
+                    <li class="no-data text-center">
+                        <img src="/html/bbs/notice/assets/image/ic_nodata.png" alt=""> <br>
+                        등록된 게시글이 없습니다.
+                    </li>
+                </ul>
+                <div class="btn-wrap text-right">
+                    <a href="./write.html" class="btn btn-type1 color-type2">등록</a>
+                </div>
+
+                <div class="paging-wrap">
+                    <ul class="paging">
+                        <li class="first"><a href="#n"><span class="hide">처음</span></a></li>
+                        <li class="prev"><a href="#n"><span class="hide">이전</span></a></li>
+                        <li class="num on"><a href="#n">1</a></li>
+                        <li class="num"><a href="#n">2</a></li>
+                        <li class="num"><a href="#n">3</a></li>
+                        <li class="num"><a href="#n">4</a></li>
+                        <li class="num"><a href="#n">5</a></li>
+                        <li class="next"><a href="#n"><span class="hide">다음</span></a></li>
+                        <li class="last"><a href="#n"><span class="hide">마지막</span></a></li>
+                    </ul>
+                </div>
+            </div>        
+            <!-- //e:board -->
+            
+        </div>
+    </article>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/target/202501/include/footer.inc';
+?>

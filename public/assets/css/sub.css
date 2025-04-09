@@ -1,0 +1,1415 @@
+@charset "utf-8";
+/* ==================================================
+
+    * sub
+    
+================================================== */
+
+/* 서브::준비중 */ 
+.ready-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ready-wrap p {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 3.6rem;
+    line-height: 1;
+}
+.ready-wrap p strong {
+    font-weight: 800;
+}
+.ready-wrap span {
+    color: #666;
+}
+
+/* 서브::VISUAL */
+@keyframes visualTextUp{
+	from {opacity: 0; -webkit-transform:translateY(10px); transform:translateY(10px); }
+	50%{ opacity: 0.4; }
+	to { opacity: 1; -webkit-transform:translateY(0px); transform:translateY(0px); }
+}
+.sub-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: -40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px auto;
+    background-image: url('../image/sub/bg_subvisual.png');
+}
+.sub-visual-con {
+    width: 100%;
+}
+.sub-visual-text {
+    opacity: 0;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #0c5b0c;
+    -webkit-animation:visualTextUp 0.5s linear forwards;
+    animation:visualTextUp 0.5s linear forwards;
+}
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    color: #586658;
+}
+.breadcrumb > li{
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.breadcrumb > li.font-suit{
+}
+
+/* 서브::LNB */
+.sub-menu {
+    overflow: hidden;
+    margin-top: -35px;
+    border: 1px solid #c5d8c6;
+    border-radius: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+.btn-sub-menu {
+    display: none;
+}
+.sub-menu-depth01 {
+    display: none;
+}
+.sub-menu-list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sub-menu-list ul > li {
+    position: relative;
+    flex-shrink: 1;
+    width: 100%;
+    text-align: center;
+}
+.sub-menu-list ul > li + li::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 18px;
+    margin-top: -9px;
+    background-color: #c5d8c6;
+}
+.sub-menu-list ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    background-color: #fff;
+    color: #586658;
+    transition: 0.3s ease;
+}
+.sub-menu-list ul > li.on > a,
+.sub-menu-list ul > li:hover > a {
+    background-color: #17941b;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* 서브::TAP MENU */
+.sub-tab-wrap{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.sub-tab-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-tab-menu > li{
+    flex: 1;
+    height: 55px;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    border-right: 0;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.sub-tab-menu > li:last-child{
+    border-right: 1px solid #c1c1c1;
+}
+.sub-tab-menu > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #929292;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.sub-tab-menu > li:hover,
+.sub-tab-menu > li.on{
+    background-color: #0c5b0c;
+    border-color: #0c5b0c;
+}
+.sub-tab-menu > li:hover > a,
+.sub-tab-menu > li.on > a{
+    color: #fff;
+}
+.sub-tab-con {
+    display: none;
+}
+
+
+.sub-tab-wrap.type3 {
+    z-index: 5;
+    position: relative;
+    margin-bottom: -45px;
+}
+.type3 .sub-tab-menu{
+    gap: 25px;
+}
+.type3 .sub-tab-menu > li{
+    max-width: 330px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+}
+.type3 .sub-tab-menu > li > a {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0c5b0c;
+}
+.type3 .sub-tab-menu > li:hover,
+.type3 .sub-tab-menu > li.on{
+    background-color: #0c5b0c;
+    border-color: #0c5b0c;
+}
+.type3 .sub-tab-menu > li:hover > a,
+.type3 .sub-tab-menu > li.on > a{
+    color: #fff;
+}
+
+/* 서브::공통 */
+.sub-contents {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.sub-tit-wrap {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.sub-tit {
+    padding-left: 26px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 22px;
+    background-image: url('../image/sub/bg_sub_tit.png');
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #0c5b0c;
+    line-height: 1.2;
+}
+
+/* 로그인:: Type E */
+.login-wrap.type5{
+    max-width: 840px;
+    margin: 0 auto;
+}
+.type5 .login-tit-wrap{
+    text-align: center;
+}
+.type5 .login-tit{
+    margin-bottom: 40px;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.type5 .login-tit-wrap p{
+    font-weight: 500;
+    color: #6b6b6b;
+}
+.type5 .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 70px 0;
+    padding: 60px 30px 30px;
+    border-top: 3px solid #0c5b0c;
+    border-bottom: 1px solid #e5e5e5;
+    gap: 10px;
+}
+.type5 .login-form .form-group{
+    width: calc(100% - 180px);
+}
+.type5 .login-form .form-item{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-image: url('../image/sub/ic_person.png');
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.type5 .login-form .form-item[type="password"]{
+    background-image: url('../image/sub/ic_password.png');
+}
+.type5 .login-form .form-item + .form-item{
+    margin-top: 20px;
+}
+.type5 .input-box .btn.btn-login{
+    flex: 0 0 auto;
+    width: 170px;
+    height: 140px;
+    background-color: #0096da;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+.type5 .input-box .checkbox-wrap{
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.login-form .radio-group input[type="radio"] + label, 
+.login-form .checkbox-group input[type="checkbox"] + label{
+    padding-left: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8a8a8a;
+}
+.login-form .radio-group input[type="radio"] + label:before, 
+.login-form .checkbox-group input[type="checkbox"] + label:before{
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-color: #778193;
+}
+.login-form .radio-group input[type="radio"]:checked + label:before, 
+.login-form .checkbox-group input[type="checkbox"]:checked + label:before{
+    border-color: #21ade8;
+    background-image: url('../image/sub/ic_cst_checkbox.png');
+}
+.type5 .login-form .btn-wrap{
+    margin-top: 40px;
+    text-align: center;
+}
+.type5 .login-form .btn-wrap .btn{
+    display: inline-block;
+    padding: 21px 50px;
+    margin: 0 8px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+.type5 .login-form .btn.btn-signup{
+    position: relative;
+    padding-right: 90px;
+    background-color: #fff;
+    border-color: #0096da;
+    color: #666666;
+}
+.type5 .login-form .btn.btn-signup:before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'GO';
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0096da;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 찾기::Type A */
+.type1 .find-form{
+    max-width: 440px;
+}
+.type1 .find-form + .find-form{
+    border-left: 1px solid #ececec;
+}
+.type1 .find-tit-wrap{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.type1 .find-tit{
+    margin: 15px 0;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #0c5b0c;
+    line-height: 1;
+}
+.type1 .find-form .form-item{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+}
+.type1 .find-form .form-item + .form-item{
+    margin-top: 10px;
+}
+.type1 .find-form .btn-wrap{
+    margin-top: 10px;
+}
+.type1 .btn.btn-type2{
+    width: 100%;
+    margin: 0;
+}
+.type1 .find-result-con{
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #575757;
+    text-align: center;
+}
+
+/* 가입안내:: */
+.signup-wrap .bg-box {
+    padding: 100px 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1;
+    font-size: 4rem;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../image/sub/bg_signup.png');
+}
+.signup-wrap .bg-box strong{
+    font-size: 4.5rem;
+}
+
+/* 약관동의:: */
+.step-list-wrap{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.step-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step-list > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 400px;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    border-right: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #929292;
+    background-color: #fff;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.step-list > li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.step-list > li:last-child{
+    border-right: 1px solid #c1c1c1;
+    border-radius: 0 10px 10px 0;
+}
+.step-list > li.on{
+    background-color: #0c5b0c;
+    border-color: #0c5b0c;
+    color: #fff;
+}
+
+.signup-text {
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #666666;
+}
+.term-wrap{
+    height: 320px;
+    padding: 30px;
+    border: 1px solid #c7dadd; 
+}
+.scroll-y{
+    overflow-y: auto;
+}
+.scroll-y::-webkit-scrollbar{
+    overflow: hidden;
+    width: 13px;
+}
+.scroll-y::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-left: 1px solid #c7dadd;
+}
+.scroll-y::-webkit-scrollbar-thumb{
+    background-color: #5f5f5f;
+}
+.term-conbox{
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+.term-wrap + .checkbox-wrap{
+    display: block;
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: right;
+}
+.term-wrap + .checkbox-wrap input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* 가입완료::Type A */
+.signup-complete-wrap.type1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.signup-complete-wrap.type1 .tit{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.signup-complete-wrap.type1 .highlights{
+    display: inline;
+    padding: 0 5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    box-shadow: inset 0 -14px 0 #fffce5;
+}
+.signup-complete-wrap.type1 p{
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.signup-complete-wrap.type1 ul{
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 40px;
+    background-color: #e9f6e9;
+    border-radius: 50px;
+}
+.signup-complete-wrap.type1 ul > li{
+    display: inline-block;
+    position: relative;
+    padding: 20px 35px;
+    font-weight: 500;
+    color: #005303;
+}
+.signup-complete-wrap.type1 ul > li.title {
+    background-color: #17941b;
+    color: #fff;
+    font-weight: 700;
+}
+.signup-complete-wrap.type1 ul > li:not(.title):after{
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 14px;
+    margin-top: -7px;
+    background-color: #005303;
+}
+.signup-complete-wrap.type1 ul > li.title:after,
+.signup-complete-wrap.type1 ul > li:last-child:after {
+    display: none;
+}
+.signup-complete-wrap.type1 .btn-wrap{
+    margin-top: 60px;
+}
+
+/* 마이페이지::Type A */
+.mypage-menu{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+}
+.mypage-menu > li{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(25% - 30px);
+    height: 330px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../image/sub/bg_mypage01.png');
+    transition: 0.3s ease;
+}
+.mypage-menu > li:nth-of-type(even) {
+    background-image: url('../image/sub/bg_mypage02.png');
+}
+.mypage-menu > li > a{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 60px 20px 40px;
+}
+.mypage-menu > li p {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.mypage-menu .bottom{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.mypage-menu .bottom img{
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.mypage-menu .bottom .btn {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 3px 7px 0 rgba(125, 125, 125, 0.5);
+    transition: 0.3s ease;
+}
+.mypage-menu .bottom .btn span {
+    padding: 5px 20px 5px 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #10907f;
+}
+.mypage-menu .bottom .btn .arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;;
+    border-radius: 50%;
+    background-color: #10907f;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: center;
+    background-image: url('../image/sub/ic_mypage_arrow.png');
+}
+
+.mypage-menu > li:last-child {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('../image/sub/bg_mypage03.png');
+}
+.mypage-menu > li:last-child > a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px 70px;
+    color: #fff;
+}
+.mypage-menu > li:last-child p {
+    margin-bottom: 0;
+}
+.mypage-menu > li:last-child .bottom,
+.mypage-menu > li:last-child .btn {
+    position: static;
+    width: auto;
+    transform: translateX(0);
+}
+.mypage-menu > li:last-child:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0) ),url('../image/sub/bg_mypage03.png');
+}
+
+.mypage-menu li:hover{
+    border: solid 1px #10907f;
+}
+.mypage-menu li:hover .bottom img {
+    opacity: 0;
+}
+.mypage-menu li:hover .btn {
+    opacity: 1;
+} 
+
+/* 개인정보수정::*/
+.find-tit-wrap{
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.find-tit-wrap:has(.bg-grey) {
+    margin-bottom: 50px;
+}
+.find-tit-wrap .bg-grey {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.find-tit{
+    margin-top: 15px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #0c5b0c;
+    line-height: 1;
+}
+.find-form .write-wrap + .list-type {
+    margin-top: 20px;
+}
+
+/* 회비납부:: */
+.table-wrap:has(.list-table) {
+    border-top-color: #17941b;
+}
+.list-table thead th {
+    background-color: #edf8ee;
+    color: #096f0c;
+}
+.list-table th,
+.list-table td {
+    padding: 10px;
+}
+
+/* 회원탈퇴::Type A */
+.bg-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: 500;
+}
+.bg-box{
+    padding: 45px 60px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    background-color: #e8fce8;
+}
+.bg-box.bg-white {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+.bg-box .tit {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0c5b0c;
+}
+
+.find-form{
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+/* list::paging */
+.paging-wrap{
+    margin-top: 70px;
+    text-align: center;
+}
+.paging{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.paging > li{
+    overflow: hidden;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    vertical-align: top;
+    transition: 0.3s ease;
+}
+.paging > .num:hover,
+.paging > .num.on,
+.paging > .num:hover > a,
+.paging > .num.on > a{
+    font-weight: 700;
+    color: #111;
+}
+.paging > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3px 0;
+    color: #b3b3b3;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.paging > li:not(.num){
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #cccccc;
+    background-color: #fff;
+    background-size: auto 10px;
+    transition: 0.3s ease;
+}
+.paging > li:not(.num):hover{
+    background-color: #f7f7f7;
+}
+.paging .first{
+    background-image: url('../image/icon/ic_first.png');
+}
+.paging .prev{
+    margin-right: 15px;
+    background-image: url('../image/icon/ic_prev.png');
+}
+.paging .next{
+    margin-left: 15px;
+    background-image: url('../image/icon/ic_next.png');
+}
+.paging .last{
+    background-image: url('../image/icon/ic_last.png');
+}
+
+/* 학회소개::학회장 인사말 */
+.greeting-wrap{
+    display: flex;
+    gap: 4%;
+}
+.greeting-wrap .img-wrap{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 28%;
+    text-align: center;
+}
+.greeting-wrap .img-tit{
+    margin-top: 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.greeting-wrap .img-tit strong{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.greeting-wrap .img-wrap .img{
+    overflow: hidden;
+    border-radius: 10px 10px 40px 10px;
+}
+.greeting-wrap .text-wrap{
+    font-size: 1.7rem;
+    line-height: 1.4;
+}
+.greeting-wrap .text-wrap > .tit{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.greeting-wrap .text-wrap p + p{
+    margin-top: 30px;
+}
+.greeting-tit-wrap{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.greeting-tit{
+    display: inline-block;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-image: url('../image/sub/bg_greeting_tit.png');
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #17941b;
+    vertical-align: middle;
+}
+.greeting-tit strong{
+    color: #0096da;
+}
+
+/* 학회소개::설립목적 */
+.goal-conbox{
+    max-width: 1064px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-image: url('../image/sub/bg_goal_conbox.png');
+    background-size: cover;
+    border-radius: 10px 10px 40px 10px;
+}
+.goal-conbox p{
+    padding: 150px 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.business-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.business-list > li{
+    display: flex;
+    align-items: center;
+    width: calc((100% - 60px)/4);
+    padding: 20px 0;
+    background-color: #f6f6f6;
+    border-radius: 10px 10px 40px 10px;
+    border: 2px solid transparent;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    transition: 0.3s ease;
+}
+.business-list .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 36%;
+}
+.business-list .icon img{
+    max-width: 90%;
+    transition: 0.3s ease;
+}
+.business-list .text-wrap{
+    padding: 0 10px;
+}
+.business-list > li:hover{
+    border-color: #17941b;
+}
+.business-list > li:hover .icon img{
+    transform: scale(1.05);
+}
+.m-br{
+    display: none;
+}
+
+/* 학회소개::CI 소개*/
+.ci-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 100px;
+}
+.ci-list > li{
+    display: block;
+    flex: 1;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
+    border: 3px solid #dddddd;
+    border-radius: 20px;
+    font-size: 2.4rem;
+    color: #666666;
+    text-align: center;
+}
+.ci-tit{
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+}
+.ci-list .text-wrap > strong{
+    font-size: 3rem;
+    color: #0096da;
+}
+.ci-list > li:last-child .text-wrap > strong{
+    color: #90c31f;
+}
+.ci-list .text-wrap p{
+    margin-top: 20px;
+}
+.logo-list{
+    display: flex;
+    gap: 20px;
+}
+.logo-list > li{
+    display: block;
+    flex: 1;
+    border: 1px solid #cccccc;
+    border-radius: 20px 20px 60px 20px;
+    transition: 0.3s ease;
+}
+.logo-list > li:hover{
+    border-color: #90c31f;
+}
+.logo-list > li > a{
+    display: block;
+    padding: 30px 15px;
+}
+.logo-list .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.logo-list .tit{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.logo-list .tit img{
+    margin-top: -3px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* 학회소개::연혁 */
+.year-rolling-wrap{
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    background-color: #61d4e6;
+}
+.year-rolling-wrap:before,
+.year-rolling-wrap:after{
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 25px;
+    height: 100%;
+    background-color: #fff;
+}
+.year-rolling-wrap:before{
+    left: 0;
+}
+.year-rolling-wrap:after{
+    right: 0;
+}
+.btn-year-arrow{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 53px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-year-prev{
+    left: 0;
+    background-image: url('../image/sub/ic_year_prev.png');
+}
+.btn-year-next{
+    right: 0;
+    background-image: url('../image/sub/ic_year_next.png');
+}
+.year-rolling{
+    position: relative;
+    height: 42px;
+    padding: 0 52px;
+    background-color: #61d4e6;
+}
+.year-rolling a{
+    position: relative;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.year-rolling .current{
+    background-color: #0096ae;
+}
+.year-rolling-wrap .slick-track,
+.year-rolling-wrap .slick-list,
+.year-rolling-wrap .slick-slide > div{
+    height: 100%;
+}
+.year-rolling-wrap .slick-slide{
+    transition: transform 0.3s ease-in-out;
+}
+
+.history-wrap{
+    position: relative;
+}
+.history-conbox{
+    display: flex;
+    gap: 20px;
+}
+.history-conbox + .history-conbox{
+    margin-top: 35px;
+}
+.history-conbox  .year{
+    flex: 0 0 auto;
+    width: 100px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.history-con > li{
+    display: flex;
+    gap: 15px;
+    font-size: 2.4rem;
+    color: #666666;
+    word-break: keep-all;
+}
+.history-con > li + li{
+    margin-top: 20px;
+}
+.history-con .date{
+    flex: 0 0 auto;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0096ae;
+}
+
+.conf .history-con .date{
+    width: 195px;
+}
+
+/* 학회소개::정관 */
+.term-con-wrap{
+    margin-top: 100px;
+}
+.term-tit{
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-radius: 10px 10px 0 0;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0c5b0c;
+}
+.term-conbox{
+    padding: 25px 30px;
+    border: 1px solid #c7dadd;
+    line-height: 1.4;
+}
+.term-conbox + .term-tit,
+.term-conbox ul + p{
+    margin-top: 55px;
+}
+.term-conbox .list-type-decimal > li{
+    padding-left: 2rem;
+}
+.term-conbox .list-type-decimal > li::before{
+    content: counter(number)'.';
+    width: 2rem;
+    margin-left: -2rem;
+}
+.term-conbox .list-type-square > li:before{
+    content: '■';
+    color: #0c5b0c;
+    line-height: 0.5;
+}
+.term-conbox .list-type-square > li > strong{
+    font-weight: bold;
+    color: #0c5b0c;
+}
+.term-conbox .list-type-square > li > strong + div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.term-conbox .list-type-square > li + li{
+    margin-top: 30px;
+}
+.term-conbox .list-type-square > li .list-type{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 학회소개::사무국 안내 */
+.map-icon{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.map-icon > li > a{
+    display: block;
+}
+.map-wrap{
+    width: 100%;
+    height: 360px;
+}
+.root_daum_roughmap.root_daum_roughmap_landing .cont{
+    display: none;
+}
+.sub-contit-wrap{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sub-contit{
+    display: inline-block;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    background-image: url('../image/sub/bg_sub_contit.png');
+    font-size: 2.2rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.map-info-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.map-info-list > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
+    min-height: 80px;
+    padding: 15px;
+    background-color: #f6f6f6;
+    border-radius: 5px 5px 20px 5px;
+}
+.map-info-list > li:last-child{
+    flex: 0 0 auto;
+    width: 100%;
+}
+.map-info-list > li span{
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+.contact-conbox .sub-tab-wrap{
+    margin-top: 100px;
+}
+.type2 .sub-tab-menu{
+    gap: 20px;
+}
+.type2 .sub-tab-menu > li{
+    max-width: 225px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #17941b;
+}
+.type2 .sub-tab-menu > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #17941b;
+}
+.type2 .sub-tab-menu > li.on,
+.type2 .sub-tab-menu > li:hover{
+    background-color: #17941b;
+}
+.type2 .sub-tab-menu > li.on > a,
+.type2 .sub-tab-menu > li:hover > a{
+    color: #fff;
+}
+.contact-info{
+    margin-top: 60px;
+}
+.contact-info > li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.contact-info > li + li{
+    margin-top: 30px;
+}
+.contact-info > li:last-child{
+    align-items: start;
+}
+.contact-info .tit{
+    display: block;
+    margin-top: 30px;
+    color: #17941b;
+}
+.contact-info .tit:nth-of-type(1){
+    margin-top: 0;
+}
+.contact-conbox .box-list{
+    display: flex;
+    gap: 4%;
+    margin-top: 90px;
+}
+.contact-conbox .box-list > li{
+    display: block;
+    flex: 1;
+    padding: 0 20px 40px;
+    background-color: #f6f6f6;
+    border: 3px solid #dddddd;
+    border-radius: 20px;
+    text-align: center;
+}
+.contact-conbox .box-list .tit{
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    min-width: 165px;
+    padding: 9px 20px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000000;
+}
+.contact-conbox .box-list .text-wrap strong{
+    display: block;
+    font-size: 3rem;
+    flex: 700;
+    color: #0096da;
+}
+.contact-conbox .box-list .text-wrap ul{
+    display: inline-block;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 2.4rem;
+    color: #666666;
+    vertical-align: top;
+}
+
+/* 학회지 및 간행물::국문지 */
+.journal-conbox .bg-box{
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-image: url('../image/sub/bg_journal_box.png');
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: -0.07em;
+    text-align: center;
+}
+.journal-conbox .bg-box .tit{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+.journal-info{
+    margin-top: 70px;
+}
+.journal-info > li{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 2.4rem;
+    color: #666666;
+}
+.journal-info > li + li{
+    margin-top: 20px;
+}
+.journal-info .tit{
+    position: relative;
+    flex: 0 0 auto;
+    width: 290px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.journal-info .tit:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 5px; 
+    background:linear-gradient(45deg,#0096da,#90c31f); 
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude; 
+}
+.journal-banner{
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/sub/bg_journal_banner.png');
+    border-radius: 10px;
+    text-align: center;
+}
+.journal-banner p{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.journal-conbox .greeting-wrap{
+    align-items: center;
+    margin-top: 130px;
+}
+.journal-conbox .img-wrap{
+    width: 19%;
+}
+.journal-conbox .text-wrap{
+    padding-bottom: 70px;
+}
+.journal-conbox .table-wrap{
+    margin-top: 130px;
+}
+
+/* 회원관련::개인정보 취급방침 */
+.term-con-wrap.type2{
+    margin-top: 60px;
+}
+.term-con-wrap.type2 .term-conbox{
+    border: 0;
+    padding: 20px 0 50px;
+}
+.term-con-wrap.type2 .term-tit{
+    margin-top: 0;
+    background-color: #e6f6e6;
+    border-radius: 10px;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #17941b;
+}
+.term-con-wrap.type2 .term-conbox .list-type{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,1717 @@
+@charset "utf-8";
+/* ==================================================
+
+    * responsive
+    
+================================================== */
+@media screen and (max-width: 1340px) {
+    .inner-layer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* main visual */
+    .main-visual{
+        max-width: 100%;
+    }
+
+    /* sponsor */
+    .sponsor-rolling .slick-prev{
+        left: 15px;
+    }
+    .sponsor-rolling .slick-next{
+        right: 15px;
+    }
+
+    /* 서브::LNB */
+    .sub-menu {
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    /* base */
+    /* show / hide */
+    .p-show {
+        display: none;
+    }
+    .t-show {
+        display: block;
+    }
+
+    /* main visual */
+    .main-visual{
+        height: 500px;
+    }
+    .main-visual-con{
+        background-size: cover;
+    }
+    .main-menu-list{
+        gap: 10px;
+    }
+    .main-menu-list > li{
+        height: 120px;
+    }
+    .main-menu-list .icon{
+        height: 40px;
+    }
+    .main-menu-list .icon img{
+        max-height: 40px;
+    }
+    .main-visual .slick-dots{
+        bottom: 80px;
+    }
+    
+    /* main contents */
+    .main-menu-list{
+        margin-top: -60px;
+    }
+    .main-quick-menu > li{
+        height: 200px;
+    }
+    .main-quick-menu > li > a{
+        gap: 10px;
+        padding: 0 20px;
+    }
+    .main-quick-menu > li > a img{
+        flex: 0 0 auto;
+        width: 80px;
+    }
+    .select-year-wrap{
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-ev-wrap .main-tit-wrap{
+        width: 25%;
+    }
+    .main-ev-rolling{
+        width: 75%;
+    }
+
+    /* 서브::VISUAL */
+    .sub-visual {
+        height: 250px;
+        margin-top: 0;
+        background-size: cover;
+    }
+    
+    /* 서브::LNB */
+    .sub-menu {
+        position: static;
+    }
+    .sub-menu:before,
+    .sub-menu:after {
+        display: none;
+    }
+    .sub-menu-list ul > li > a {
+        padding: 0 10px;
+    }
+    
+    /* 가입완료::Type A */
+    .signup-complete-wrap.type1 ul > li {
+        padding: 20px 25px;
+    }
+
+    /* 마이페이지::Type A */
+    .mypage-menu {
+        gap: 20px;
+    }
+    .mypage-menu > li{
+        width: calc(25% - 15px);
+    }
+
+    /* 학회소개::설립목적 */
+    .business-list{
+        gap: 15px;
+    }
+    .business-list > li{
+        width: calc((100% - 45px)/4);
+    }
+    .business-list .icon{
+        width: 30%;
+    }
+    .business-list .icon img{
+        max-width: 70%;
+    }
+
+    /* 학회소개::CI 소개 */
+    .ci-list{
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* base */
+    /* layer */
+    .inner-layer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* table */
+    .table-wrap + .table-wrap {
+        margin-top: 20px;
+    }
+    .cst-table th,
+    .cst-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .cst-table th.text-left,
+    .cst-table td.text-left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cst-table thead th {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .cst-table .active th {
+        padding: 10px;
+        font-size: 17px;
+    }
+    .cst-table.col2 colgroup col:nth-child(1) {
+        width: 30% !important;
+    }
+
+    .scroll-x {
+        overflow-x: auto;
+    }
+    .scroll-x table {
+        width: 768px;
+    }
+
+    .touch-help {
+		position: relative;
+	}
+	.touch-help:before {
+		display: block;
+		content: '';
+		color: #fff;
+		clear: both;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		width: 100%;
+		max-width: 80%;
+		height: 100%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		background-image: url('../image/common/img_touch_help.png');
+	}
+	.touch-help.small:before {
+		width: 100%;
+		max-width: 100%;
+		height: 75px;
+		background-size: auto 100%;
+	}
+	.touch-help table {
+		position: relative;
+	}
+	.touch-help table:before {
+		display: block;
+		content: '';
+		clear: both;
+		position: absolute;
+		top: 0;
+		left: 0;
+        z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.7);
+	}
+
+    /* list type */
+    .list-type-dot.green > li + li {
+        margin-top: 8px;
+    }
+
+    /* button */
+    .btn-wrap {
+        margin-top: 20px;
+    }
+    .btn.btn-type1 {
+        min-width: 80px;
+        margin: 2px;
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+    .btn.btn-type2 {
+        margin: 2px;
+        padding: 11px 30px;
+        font-size: 16px;
+    }
+    .btn.btn-small {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .btn .right {
+        margin-left: 10px;
+    }
+    .btn .left {
+        margin-right: 10px;
+    }
+    .btn:not(.right) img{
+        height: 12px;
+        margin-right: 8px;
+    }
+
+    /* radio, checkbox */
+    .radio-wrap, 
+    .checkbox-wrap {
+        gap: 5px 10px;
+    }
+
+    /* form */
+    .help-text {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    
+    .form-item {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .write-wrap li.n2 {
+        float: none;
+        width: 100%;
+    }
+    .write-wrap li.n2 .form-tit {
+        text-align: left;
+    }
+    .write-wrap li.n2 .form-con {
+        width: 100%;
+    }
+    .write-wrap li:not(:has(.form-con)) .form-tit,
+    .write-wrap li:not(:has(.form-tit)) .form-con {
+        padding: 10px;
+    }
+    
+    .write-wrap .form-tit,
+    .write-wrap .form-con {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .write-wrap .form-tit {
+        border-bottom: 1px solid #e2e2e2;
+    }
+    
+    .write-wrap .form-con .form-tit {
+        width: 100%;
+        padding: 10px;
+    }
+    .write-wrap .form-con .form-con {
+        padding: 10px;
+    }
+
+    .form-group[class*="n"],
+    .form-group-text {
+        gap: 5px;
+    }
+    .form-group.n3 .form-item,
+    .form-group.n4 .form-item,
+    .form-group.n5 .form-item {
+        flex-wrap: wrap;
+        width: calc((100% - 10px)/2);
+    }
+
+    .form-group.has-btn .form-item {
+        width: 100%;
+    }
+    .form-group.has-btn .btn {
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-group.has-btn .form-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .radio-wrap .form-item, 
+    .checkbox-wrap .form-item {
+        width: auto;
+    }
+
+    /* input file custom */
+    .filebox label {
+        width: 85px;
+        padding: 9px 0;
+        font-size: 12px;
+    }
+    .filebox .upload-name {
+        width: calc(100% - 95px);
+    }
+    .filebox .attach-file {
+        font-size: 12px;
+    }
+    .attach-file .btn-file-delete img {
+        width: 8px;
+    }
+    
+    /* captcha */
+    .captcha { 
+        flex-wrap:wrap; 
+    }
+    .captcha .write-wrap .form-item {
+        width: 100%;
+    }
+
+    /* show / hide */
+    .t-show {
+        display: none;
+    }
+    .m-show {
+        display: block;
+    }
+    .m-hide {
+        display: none;
+    }
+
+    /* 서브::준비중 */ 
+    .ready-wrap img {
+        height: 84px;
+    }
+    .ready-wrap p {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .ready-wrap .des {
+        font-size: 14px;
+    }
+    .notice-box {
+        text-align: center;
+    }
+    .notice-box img {
+        max-width: 125px;
+    }
+    .notice-box p {
+        margin-top: 20px;
+        color: #666666;
+    }
+
+    /* 서브::VISUAL */
+    .sub-visual {
+        height: 100px;
+        background-image: url('../image/sub/bg_subvisual_m.png');
+    }
+    .sub-visual-con {
+        margin-bottom: 10px;
+    }
+    .sub-visual-text {
+        font-size: 20px;
+    }
+    .breadcrumb {
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .breadcrumb > li {
+        font-size: 12px;
+    }
+    .breadcrumb img {
+        width: 16px;
+    }
+
+    /* main visual */
+    .main-visual{
+        height: 250px;
+        margin-top: 0;
+    }
+    .main-visual-con{
+        border-radius: 0;
+    }
+    .main-visual-con01{
+        background-image: url('../image/main/bg_mainvisual01_m.png');
+    }
+    .main-visual-con02{
+        background-image: url('../image/main/bg_mainvisual01_m.png');
+    }
+    .main-visual-tit{
+        font-size: 20px;
+    }
+    .main-visual-tit strong{
+        font-size: 30px;
+    }
+    .main-visual-text p{
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .main-visual .slick-dots{
+        padding: 6px 15px;
+        bottom: 15px;
+    }
+    .main-visual .slick-dots > li{
+        margin: 0 3px;
+    }
+    .main-visual .slick-dots > li.slick-active button{
+        width: 8px;
+        height: 8px;
+    }
+    .main-menu-list{
+        flex-wrap: wrap;
+        margin: 15px 0;
+        gap: 10px;
+    }
+    .main-menu-list > li{
+        flex: inherit;
+        width: calc((100% - 20px)/3);
+        height: 100px;
+        border-radius: 10px;
+    }
+    .main-menu-list > li:hover{
+        transform: none;
+    }
+    .main-menu-list .tit{
+        font-size: 14px;
+    }
+    .main-menu-list .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .main-menu-list .icon img{
+        max-width: 100%;
+        max-height: auto;
+    }
+    .main-contents:has(.main-board-conbox){
+        margin-top: 35px;
+        padding-top: 0;
+        border: 0;
+    }
+    .main-contents:has(.main-board-conbox) .inner-layer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-board-conbox, 
+    .main-gall-conbox{
+        width: 100%;
+    }
+    .main-tit-wrap{
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .main-tit{
+        font-size: 20px;
+    }
+    .main-tit-wrap .btn-more{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        background-size: 18px;
+    }
+    .main-board-cate{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 auto;
+        gap: 5px;
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .main-board-cate > li{
+        width: calc((100% - 5px)/2);
+    }
+    .main-board-cate > li + li{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .main-board-cate > li + li:before{
+        display: none;
+    }
+    .main-board-cate > li:first-child{
+        width: 100%;
+    }
+    .main-board-cate > li > a{
+        display: block;
+        padding: 5px;
+        background-color: #f2fcf2;
+        border-radius: 8px 4px 8px 4px;
+        border: 1px solid #17941b;
+        font-size: 14px;
+        font-weight: 500;
+        color: #17941b;
+    }
+    .main-board-cate > li.on > a,
+    .main-board-cate > li:hover > a{
+        background-color: #17941b;
+        color: #fff;
+    }
+    .main-board-list > li + li{
+        margin-top: 7px;
+    }
+    .main-board-list > li > a{
+        gap: 10px;
+    }
+    .main-board-list .cate{
+        width: 65px;
+        height: 25px;
+        border-radius: 8px 4px 8px 4px;
+        font-size: 12px;
+    }
+    .main-board-list .subject{
+        max-width: calc(100% - 150px);
+        font-size: 14px;
+    }
+    .main-board-list > li:hover .subject{
+        box-shadow: inset 0 -6px #ebf9dd;
+    }
+    .main-board-list .date{
+        width: 65px;
+        font-size: 12px;
+        text-align: right;
+    }
+    .main-gall-conbox .btn-more{
+        display: block;
+    }
+    .main-gall-conbox .img-wrap{
+        height: 200px;
+        border-width: 2px;
+        border-radius: 15px 3px 15px 3px;
+    }
+    .main-gall-conbox .img-wrap > a:hover:before{
+        display: none;
+    }
+    .main-contents:has(.main-ev-rolling){
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .select-year-wrap{
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 10px;
+    }
+    .select-year-wrap{
+        position: static;
+        top: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .select-year{
+        width: 135px;
+        height: 38px;
+        font-size: 15px;
+        border-radius: 8px 3px 8px 3px;
+    }
+    .select-year select{
+        padding: 0 15px;
+        background-position: right 15px center;
+        background-size: 10px;
+    }
+    .select-year select option{
+        font-size: 15px;
+    }
+    .select-year-wrap .month-wrap{
+        position: relative;
+        width: 110px;
+    }
+    .month-wrap .btn-month{
+        display: block;
+        width: 100%;
+        height: 38px;
+        padding: 0 15px;
+        background-color: #61d4e6;
+        border-radius: 8px 3px 8px 3px;
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-image: url('../image/main/ic_select_arrow.png');
+        background-size: 10px;
+        color: #fff;
+        text-align: left;;
+    }
+    .month-wrap .month{
+        overflow-y: auto;
+        display: none;
+        position: absolute;
+        top: 38px;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        max-height: 200px;
+        border-radius: 0;
+    }
+    .select-year-wrap .month > li{
+        flex: inherit;
+    }
+    .select-year-wrap .month > li > a{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .main-ev-wrap .main-tit-wrap{
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .main-ev-wrap .main-tit{
+        margin: 0;
+    }
+    .main-ev-wrap .main-tit-wrap p{
+        display: none;
+    }
+    .main-ev-wrap .main-tit-wrap .btn-more{
+        right: 15px;
+    }
+    .main-ev-wrap{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-ev-rolling{
+        width: 100%;
+    }
+    .main-ev-rolling .slick-list{
+        margin: 0 35px;
+    }
+    .main-ev-rolling .slick-arrow{
+        width: 26px;
+        height: 26px;
+        background-size: 100%;
+    }
+    .main-ev-con{
+        width: calc((100% - 20px)/2);
+        margin: 0 5px;
+        padding: 5px;
+    }
+    .main-ev-con > a{
+        width: 100%;
+        height: 100%;
+        min-height: 190px;
+        padding: 15px 20px;
+        margin: 0;
+        border-radius: 15px 5px 5px 5px;
+        border: 0;
+        box-shadow: 1.5px 1.5px 8px 1.5px rgba(0, 0, 0, 0.08);
+    }
+    .main-ev-con > a:before{
+        display: none;
+    }
+    .main-ev-con .month{
+        display: none;
+    }
+    .main-ev-con .tit{
+        padding-left: 25px;
+        padding-right: 0;
+        background-size: 15px;
+        background-position: 0 7px;
+        font-size: 18px;
+    }
+    .main-ev-con > a:hover .tit span{
+        box-shadow: inset 0 -8px #ebf9dd;
+    }
+    .main-ev-con .place{
+        padding-left: 15px;
+        background-size: 9px;
+        margin-top: 20px;
+    }
+    .main-ev-con .date{
+        margin-top: auto;
+        font-size: 12px;
+    }
+
+    .main-quick-menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-quick-menu > li{
+        width: 100%;
+        border-radius: 5px 5px 20px 5px;
+    }
+    .main-quick-menu > li > a{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+    .main-quick-menu > li > a br{
+        display: none;
+    }
+    .main-quick-menu > li > a img{
+        width: 33px;
+    }
+    .main-quick-menu > li:nth-child(2) > a:before{
+        padding: 3px;
+        border-radius: 5px 5px 20px 5px;
+    }
+    .main-quick-menu > li:before{
+        display: none;
+    }
+    .main-contents:has(.related-list){
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .related-list{
+        flex-wrap: wrap;
+        gap: 10px;
+        border: 0;
+        border-radius: 0;
+    }
+    .related-list > li{
+        width: calc((100% - 10px)/2);
+    }
+    .related-list li + li:before{
+        display: none;
+    }
+    .related-list li > a{
+        display: block;
+        height: 85px;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 15px;
+        background-position: right 10px bottom 15px;
+        background-size: auto 30px;
+    }
+    .related-list .logo{
+        max-height: 30px;
+    }
+    .related-list .logo img{
+        max-width: 100%;
+        max-height: 30px;
+    }
+    .related-list .logo:after{
+        width: 12px;
+        height: 12px;
+        top: -1px;
+        right: -5px;
+    }
+    .related-list li:nth-child(4) .logo:after, 
+    .related-list li:nth-child(5) .logo:after{
+        top: 3px;
+    }
+    .related-list li:hover{
+        background: transparent;
+    }
+    .related-list li:nth-child(1) > a{
+        background-image: url('../image/main/bg_related01.png');
+    }
+    .related-list li:nth-child(2) > a{
+        background-image: url('../image/main/bg_related02.png');
+    }
+    .related-list li:nth-child(3) > a{
+        background-image: url('../image/main/bg_related03.png');
+    }
+    .related-list li:nth-child(4) > a{
+        background-image: url('../image/main/bg_related04.png');
+    }
+    .related-list li:nth-child(5) > a{
+        background-image: url('../image/main/bg_related04.png');
+    }
+    .related-list li:hover > a .logo:after{
+        width: 12px;
+        height: 12px;
+        top: -1px;
+        right: -5px;
+    }
+    .related-list li:nth-child(4):hover .logo:after, 
+    .related-list li:nth-child(5):hover .logo:after{
+        top: 3px;
+    }
+    .related-list li:nth-child(1):hover .logo img{
+        content: url('../image/main/img_related_logo01.png');
+    }
+    .related-list li:nth-child(2):hover .logo img{
+        content: url('../image/main/img_related_logo02.png');
+    }
+    .related-list li:nth-child(3):hover .logo img{
+        content: url('../image/main/img_related_logo03.png');
+    }
+    .related-list li:nth-child(4):hover .logo img{
+        content: url('../image/main/img_related_logo04.png');
+    }
+    .related-list li:nth-child(5):hover .logo img{
+        content: url('../image/main/img_related_logo05.png');
+    }
+
+    /* sponsor */
+    .sponsor-wrap{
+        padding: 15px 0;
+    }
+    .sponsor-rolling a{
+        border-radius: 3px;
+    }
+    .sponsor-rolling .slick-list{
+        margin: 0 30px;
+    }
+    .sponsor-rolling .slick-arrow{
+        width: 25px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    .sponsor-rolling .slick-slide{
+        margin: 0;
+    }
+    .sponsor-rolling .slick-slide > div{
+        margin: 0 5px;
+    }
+
+    /* 서브::LNB */
+    .sub-menu {
+        overflow: unset;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    .sub-menu-list > li {
+        position: relative;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .sub-menu-list > li > ul {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+        border: 1px solid #0096da;
+        border-top: 0;
+    }
+    .sub-menu-list ul > li {
+        width: 100%;
+        text-align: left;
+    }
+    .sub-menu-list ul > li + li::after {
+        display: none;
+    }
+    .sub-menu-list ul > li > a {
+        display: block;
+        height: auto;
+        padding: 15px;
+        background-color: #fcfcfc;
+        color: #111;
+        font-size: 14px;
+        word-break: break-word;
+    }
+    .sub-menu-list ul > li + li > a {
+        border-top: 1px solid #dddddd;
+    }
+    .sub-menu-wrap .btn-sub-menu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 0 15px;
+        padding-right: 30px;
+        border-bottom: 1px solid #dddddd;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        word-break: break-word;
+    }
+    .sub-menu-wrap .btn-sub-menu:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        display: block;
+        width: 13px;
+        height: 8px;
+        transform: translateY(-50%);
+        transition: 0.3s ease;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../image/sub/ic_btn_submenu02.png');
+    }
+    .sub-menu-wrap .btn-sub-menu.on {
+        background-color: #0096da;
+        border: 0 !important;
+        color: #fff;
+    }
+    .sub-menu-wrap .btn-sub-menu.on:after {
+        transform: translateY(-50%) rotate(180deg);
+        background-image: url('../image/sub/ic_btn_submenu.png');
+    }
+    .sub-menu-wrap .sub-menu-depth02 .btn-sub-menu {
+        border-left: 1px solid #dddddd;
+    }
+
+    .sub-menu-list ul > li.on > a,
+    .sub-menu-list ul > li:hover > a {
+        background-color: #fcfcfc;
+        color: #111;
+    }
+
+    /* 서브::공통 */
+    .sub-contents {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .page-tit-wrap {
+        display: none;
+    }
+    .sub-tit-wrap {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .sub-tit {
+        padding-left: 24px;
+        font-size: 16px;
+        background-size: auto 18px;
+    }
+    
+    /* 서브::TAP MENU */
+    .sub-tab-wrap {
+        margin-bottom: 20px;
+    }
+    .sub-tab-menu > li {
+        height: 40px;
+    }
+    .sub-tab-menu > li > a {
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    .sub-tab-wrap.type3 {
+        margin-bottom: -20px;
+    }
+    .type3 .sub-tab-menu {
+        gap: 10px;
+    }
+    .type3 .sub-tab-menu > li{
+        height: 50px;
+        border-radius: 5px;
+    }
+    .type3 .sub-tab-menu > li > a {
+        font-size: 16px;
+    }
+
+    /* 로그인:: Type E */
+    .type5 .login-form{
+        padding: 0 4%;
+    }
+    .type5 .login-tit{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .type5 .login-tit-wrap p{
+        font-size: 14px;
+    }
+    .type5 .input-box{
+        flex-direction: column;
+        margin: 20px 0 0;
+        padding: 15px 0 25px;
+        border-top-left-radius: 2px;
+    }
+    .type5 .login-form .form-group{
+        width: 100%;
+    }
+    .type5 .login-form .form-item{
+        height: 35px;
+        padding: 0 10px;
+        padding-left: 30px;
+        border-radius: 3px;
+        background-position: 10px center;
+        background-size: 10px;
+        font-size: 14px;
+    }
+    .type5 .login-form .form-item + .form-item{
+        margin-top: 5px;
+    }
+    .type5 .input-box .btn.btn-login{
+        width: 100%;
+        height: auto;
+        padding: 11px 10px;
+        border-radius: 3px;
+        font-size: 18px;
+    }
+    .type5 .input-box .checkbox-wrap{
+        margin-top: 0;
+    }
+    .login-form .radio-group input[type="radio"] + label, 
+    .login-form .checkbox-group input[type="checkbox"] + label{
+        font-size: 14px;
+    }
+    .login-form .radio-group input[type="radio"] + label:before, 
+    .login-form .checkbox-group input[type="checkbox"] + label:before{
+        top: 2px;
+    }
+    .type5 .login-form .btn-wrap{
+        margin-top: 25px;
+    }
+    .type5 .login-form .btn-wrap .btn{
+        display: block;
+        padding: 10px 30px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .type5 .login-form .btn.btn-signup{
+        padding-right: 40px;
+        margin-bottom: 10px;
+    }
+    .type5 .login-form .btn.btn-signup:before{
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    /* 찾기::Type A */
+    .find-wrap.type1{
+        flex-direction: column;
+    }
+    .type1 .find-form{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .type1 .find-form + .find-form{
+        padding-top: 30px;
+        margin-top: 30px;
+        border-left: 0;
+        border-top: 1px solid #e8e8e8;
+    }
+    .type1 .find-tit-wrap{
+        margin-bottom: 20px;
+    }
+    .type1 .find-tit-wrap .icon{
+        width: 60px;
+        height: 60px;
+    }
+    .type1 .find-tit-wrap .icon img{
+        width: 47px;
+    }
+    .type1 .find-tit{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .type1 .find-form .form-item{
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+    .type1 .find-form .form-item + .form-item{
+        margin-top: 7px;
+    }
+    .type1 .find-result-con{
+        padding: 15px;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+
+    /* 가입안내:: */
+    .signup-wrap .bg-box {
+        padding: 50px 20px 30px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .signup-wrap .bg-box strong {
+        font-size: 22px;
+    }
+
+    /* 약관동의::Type C */
+    .type3 .step-list:after{
+        width: calc(100% - 40px);
+        top: 20px;
+        height: 2px;
+    }
+    .type3 .step-list > li{
+        gap: 10px;
+    }
+    .type3 .step-list .icon{
+        width: 40px;
+        height: 40px;
+        background-size: 25px;
+    }
+    .type3 .step-list .tit{
+        font-size: 14px;
+    }
+
+    /* 약관동의:: */
+    .step-list-wrap {
+        margin-bottom: 40px;
+    }
+    .step-list > li {
+        height: 60px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .step-list > li:first-child{
+        border-radius: 5px 0 0 5px;
+    }
+    .step-list > li:last-child{
+        border-radius: 0 5px 5px 0;
+    }
+
+    .signup-text {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .term-wrap{
+        height: 200px;
+        padding: 15px;
+    }
+    .term-wrap + .checkbox-wrap{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .term-wrap + .checkbox-wrap input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+    /* 가입완료::Type A */
+    .signup-complete-wrap.type1 > img{
+        width: 80px;
+    }
+    .signup-complete-wrap.type1 .tit{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .signup-complete-wrap.type1 .highlights{
+        font-size: 15px;
+        box-shadow: inset 0 -7px 0 #fffce5;
+    }
+    .signup-complete-wrap.type1 p{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .signup-complete-wrap.type1 ul{
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .signup-complete-wrap.type1 ul > li{
+        padding: 0 15px;
+    }
+    .signup-complete-wrap.type1 ul > li.title {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .signup-complete-wrap.type1 ul > li:not(.title):after {
+        height: 10px;
+        margin-top: -5px;
+    }
+    .signup-complete-wrap.type1 .btn-wrap{
+        margin-top: 20px;
+    }
+
+    /* 마이페이지::Type A */
+    .mypage-menu{
+        gap: 10px;
+    }
+    .mypage-menu > li{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .mypage-menu > li > a{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 80px;
+        padding: 10px 20px;
+    }
+    .mypage-menu > li p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .mypage-menu .bottom {
+        position: static;
+        width: auto;
+    }
+    .mypage-menu .bottom .btn {
+        display: none;
+    }
+    .mypage-menu .bottom img {
+        height: 62px;
+    }
+
+    .mypage-menu > li:last-child > a {
+        padding: 10px 20px;
+    }
+
+    .mypage-menu li:hover .bottom img {
+        opacity: 1;
+    }
+
+    /* 개인정보수정::*/
+    .find-tit-wrap{
+        margin-bottom: 15px;
+    }
+    .find-tit-wrap img {
+        max-height: 50px;
+    }
+    .find-tit-wrap:has(.bg-grey) {
+        margin-bottom: 25px;
+    }
+    .find-tit-wrap .bg-grey {
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+    .find-tit{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .find-form .write-wrap + .list-type {
+        margin-top: 10px;
+    }
+
+    
+    /* 회원탈퇴::Type A */
+    .bg-box {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .bg-box .tit {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .bg-img-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bg-img-box img {
+        max-height: 52px;
+    }
+
+    .find-form .write-wrap .form-tit{
+        width: 100%;
+    }
+    .find-form .form-con:before{
+        display: none;
+    }
+
+    /* 학회소개::학회장 인사말 */
+    .greeting-wrap{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .greeting-wrap .img-wrap{
+        flex: inherit;
+        width: 100%;
+        max-width: 225px;
+        margin: 0 auto;
+    }
+    .greeting-wrap .img-wrap .img{
+        border-radius: 5px 5px 20px 5px;
+    }
+    .greeting-wrap .img-tit{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .greeting-wrap .text-wrap{
+        width: 100%;
+        font-size: 14px;
+    }
+    .greeting-wrap .text-wrap > .tit{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .greeting-wrap .text-wrap p + p{
+        margin-top: 20px;
+    }
+    .greeting-tit-wrap{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .greeting-tit{
+        padding-left: 20px;
+        font-size: 16px;
+        background-position: 0 4px;
+        background-size: 13px;
+    }
+    .journal-conbox .greeting-wrap,
+    .journal-conbox .table-wrap{
+        margin-top: 50px;
+    }
+
+    /* 학회소개::설립목적 */
+    .goal-conbox{
+        border-radius: 5px 5px 20px 5px;
+        background-image: url('../image/sub/bg_goal_conbox_m.png');
+    }
+    .goal-conbox p{
+        padding: 90px 15px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .goal-conbox p br{
+        display: none;
+    }
+    .business-list{
+        gap: 10px;
+    }
+    .business-list > li{
+        flex-direction: column;
+        width: calc((100% - 10px)/2);
+        padding: 15px 10px;
+        border-radius: 5px 5px 20px 5px;
+    }
+    .business-list .icon{
+        width: 100%;
+    }
+    .business-list .icon img{
+        max-width: none;
+        height: 55px;
+    }
+    .business-list .text-wrap{
+        margin-top: 15px;
+        padding: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .m-br{
+        display: block;
+    }
+
+    /* 학회소개::CI 소개 */
+    .ci-list{
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 55px;
+    }
+    .ci-tit{
+        top: -15px;
+        padding: 7px 10px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .ci-list > li{
+        padding-bottom: 30px;
+        border-width: 2px;
+        border-radius: 10px;
+    }
+    .ci-list .text-wrap{
+        font-size: 14px;
+    }
+    .ci-list .text-wrap > strong{
+        font-size: 16px;
+    }
+    .ci-list .text-wrap p{
+        margin-top: 10px;
+    }
+    .logo-list{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo-list > li{
+        width: 100%;
+        border-radius: 10px 10px 30px 10px;
+    }
+    .logo-list > li > a{
+        padding: 15px;
+    }
+    .logo-list .img{
+        height: auto;
+    }
+    .logo-list .img img{
+        max-width: 100%;
+        max-height: 75px;
+    }
+    .logo-list .tit{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .logo-list .tit img{
+        width: 20px;
+    }
+
+    /* 학회소개::연혁 */
+    .year-rolling-wrap{
+        width: calc(100% + 30px);
+        margin-top: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 30px;
+    }
+    .year-rolling-wrap:before, 
+    .year-rolling-wrap:after{
+        display: none;
+    }
+    .year-rolling{
+        padding: 10px 40px;
+    }
+    .year-rolling a{
+        font-size: 16px;
+    }
+    .year-rolling .current,
+    .year-rolling .current a{
+        background: none;
+        color: #0096ae;
+        text-decoration: underline;
+    }
+    .btn-year-arrow{
+        width: 26px;
+        height: 26px;
+        background-size: 100%;
+    }
+    .btn-year-prev{
+        left: 15px;
+    }
+    .btn-year-next{
+        right: 15px;
+    }
+    .history-conbox{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .history-conbox + .history-conbox{
+        margin-top: 25px;
+    }
+    .history-conbox .year{
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+    }
+    .history-con > li{
+        gap: 10px;
+        font-size: 14px;
+    }
+    .history-con > li + li{
+        margin-top: 10px;
+    }
+    .history-con .date{
+        position: relative;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .history-con .date:before{
+        display: block;
+        content: '';
+        clear: both;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        background-color: #0096ae;
+        border-radius: 50%;
+    }
+
+    .conf .history-con > li{
+        gap: 3px;
+        flex-direction: column;
+    }
+    .conf .history-con .date{
+        width: 100%;
+    }
+    .conf .history-con .con{
+        padding-left: 10px;
+    }
+
+    /* 학회소개::정관 */
+    .term-con-wrap{
+        margin-top: 50px;
+    }
+    .term-tit{
+        padding: 7px 15px;
+        border-radius: 5px 5px 0 0;
+        font-size: 16px;
+    }
+    .term-conbox{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .term-conbox .list-type > li + li{
+        margin-top: 3px;
+    }
+    .term-conbox .list-type-square > li + li{
+        margin-top: 20px;
+    }
+    .term-conbox .list-type-square > li .list-type{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .term-conbox + .term-tit,
+    .term-conbox ul + p{
+        margin-top: 30px;
+    }
+
+    /* 학회소개::사무국 안내 */
+    .map-icon{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .map-icon > li{
+        width: 33.33%;
+        max-width: 100%;
+    }
+    .map-wrap{
+        height: 200px;
+    }
+    .map-wrap .wrap_map{
+        height: 200px !important;
+    }
+    .sub-contit-wrap{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .sub-contit{
+        padding-left: 20px;
+        background-size: 13px;
+        background-position: 0 3px;
+        font-size: 15px;
+    }
+    .map-info-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .map-info-list > li{
+        flex: inherit;
+        justify-content: start;
+        gap: 12px;
+        width: 100%;
+        min-height: initial;
+        padding: 10px 15px;
+        border-radius: 5px 5px 20px 5px;
+        text-align: left;
+    }
+    .map-info-list > li img{
+        width: 15px;
+    }
+    .map-info-list > li span{
+        display: block;
+        margin: 0;
+    }
+    .contact-conbox .sub-tab-wrap{
+        margin-top: 40px;
+    }
+    .type2 .sub-tab-menu{
+        gap: 10px;
+    }
+    .type2 .sub-tab-menu > li{
+        max-width: 115px;
+        height: 35px;
+        border-radius: 3px;
+    }
+    .type2 .sub-tab-menu > li > a{
+        font-size: 14px;
+    }
+    .contact-info{
+        margin-top: 20px;
+    }
+    .contact-info > li{
+        gap: 20px;
+    }
+    .contact-info > li + li{
+        margin-top: 20px;
+    }
+    .contact-info > li img{
+        width: 25px;
+    }
+    .contact-info .tit{
+        margin-top: 20px;
+    }
+    .contact-conbox .box-list{
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .contact-conbox .box-list .tit{
+        top: -18px;
+        padding: 6px 10px;
+        min-width: 100px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .contact-conbox .box-list > li{
+        padding: 0 15px 20px;
+        border-width: 2px;
+        border-radius: 10px;
+    }
+    .contact-conbox .box-list .text-wrap strong{
+        font-size: 18px;
+    }
+    .contact-conbox .box-list .text-wrap ul{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* 학회지 및 간행물::국문지 */
+    .journal-conbox .sub-tab-menu{
+        flex-wrap: wrap;
+    }
+    .journal-conbox .sub-tab-menu > li{
+        flex: inherit;
+        width: calc((100% - 10px)/2);
+    }
+    .journal-conbox .bg-box{
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+        padding: 40px 15px 20px;
+        font-size: 14px;
+    }
+    .journal-conbox .bg-box .tit{
+        font-size: 23px;
+    }
+    .journal-info{
+        margin-top: 20px;
+    }
+    .journal-info > li{
+        gap: 10px;
+        font-size: 15px;
+    }
+    .journal-info > li + li{
+        margin-top: 10px;
+    }
+    .journal-info .tit{
+        width: 40%;
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+    .journal-info .tit:before{
+        padding: 3px;
+    }
+    .journal-banner{
+        width: calc(100% + 30px);
+        padding: 35px 15px;
+        margin: 0 -15px;
+        margin-top: 40px;
+        border-radius: 0;
+    }
+    .journal-banner p{
+        font-size: 16px;
+    }
+    
+
+    /* 회원관련::개인정보 취급방침 */
+    .term-con-wrap.type2{
+        margin-top: 20px;
+    }
+    .term-con-wrap.type2 .term-tit{
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        border-radius: 0;
+    }
+    .term-con-wrap.type2 .term-tit{
+        font-size: 16px;
+    }
+    .term-con-wrap.type2 .term-conbox{
+        padding: 15px 0 30px;
+    }
+    .term-con-wrap.type2 .term-conbox .list-type{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}  
