@@ -32,9 +32,9 @@
             <dl>
                 <dt>TEL</dt>
                 <dd>
-                    <p>사무국 <a href="tel:+82-2-383-9652" target="_blank">02. 383. 9652</a></p>
-                    <p>국문편집국,회원관리 <a href="tel:+82-2-383-9653" target="_blank">02. 383. 9653</a></p>
-                    <p>홍보 <a href="tel:+82-2-383-9697" target="_blank">02. 383. 9697</a></p>
+                    <p>사무국 </p>
+                    <p>국문편집국,회원관리 </p>
+                    <p>홍보 </p>
                 </dd>
             </dl>
             <dl>
@@ -44,7 +44,7 @@
             <dl>
                 <dt>E-MAIL</dt>
                 <dd>
-                    <a href="mailto:kosenv@kosenv.or.kr">kosenv@kosenv.or.kr</a>
+
                 </dd>
             </dl>
         </div>

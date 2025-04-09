@@ -1,5 +1,6 @@
 {{-- Base Scripts --}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 사이트 script -->
 <script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
 
 <script src="{{ asset('plugins/moment/js/moment.min.js') }}"></script>
@@ -9,7 +10,7 @@
 <script src="{{ asset('plugins/jquery-validation/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('script/app/app.common.js') }}?v={{ config('site.app.asset_version') }}"></script>
 
-
+<!-- 사이트 script -->
 <script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/assets/js/slick.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.rwdImageMaps.js"></script>

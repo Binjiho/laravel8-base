@@ -9,10 +9,10 @@
             <ul class="util-menu">
                 @if(thisAuth()->check())
                     <li><a href="javascript:logout();">LOGOUT</a></li>
-                    <li><a href="{{ route('mypage.intro') }}">MYPAGE</a></li>
+                    <li><a href="">MYPAGE</a></li>
                 @else
-                    <li><a href="{{ route('login') }}"><img src="/assets/image/common/ic_login.png" alt="">LOGIN</a></li>
-                    <li><a href="{{ route('joinInfo') }}"><img src="/assets/image/common/ic_signup.png" alt="">SIGN UP</a></li>
+                    <li><a href=""><img src="/assets/image/common/ic_login.png" alt="">LOGIN</a></li>
+                    <li><a href=""><img src="/assets/image/common/ic_signup.png" alt="">SIGN UP</a></li>
                 @endif
                 @auth('admin')
                 <li class="admin"><a href="{{ env('APP_URL') }}/admin"><img src="/assets/image/common/ic_admin.png" alt="">ADMIN</a></li>
@@ -32,10 +32,10 @@
         <ul class="util-menu">
             @if(thisAuth()->check())
                 <li class="logout"><a href="javascript:logout();"><img src="/assets/ko/assets/image/common/ic_util_logout.png" alt="">로그아웃</a></li>
-                <li class="mypage"><a href="{{ route('mypage.intro') }}">마이페이지</a></li>
+                <li class="mypage"><a href="">마이페이지</a></li>
             @else
-                <li><a href="{{ route('login') }}" class="btn btn-type1 color-type2">로그인</a></li>
-                <li><a href="{{ route('joinInfo') }}" class="btn btn-type1 color-type5">회원가입</a></li>
+                <li><a href="" class="btn btn-type1 color-type2">로그인</a></li>
+                <li><a href="" class="btn btn-type1 color-type5">회원가입</a></li>
             @endif
 
         </ul>
@@ -58,8 +58,6 @@
                         @endforeach
                     </li>
                 @endforeach
-
-{{--                <li class="sitemap"><a href="#n">전체 메뉴 <span>+</span></a></li>--}}
             </ul>
         </div>
 
